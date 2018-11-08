@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript</title>
+    <style type="text/css">
+        body {
+            background-color: #f1c40f;
+            -webkit-animation: color 5s ease-in 0s infinite alternate running;
+            -moz-animation: color 5s linear 0s infinite alternate running;
+            animation: color 8s linear 0s infinite alternate running;
+        }
+        /* Animasi + Prefix untuk browser */
+        
+        @-webkit-keyframes color {
+            0% {
+                background-color: #f1c40f;
+            }
+            32% {
+                background-color: #e74c3c;
+            }
+            55% {
+                background-color: #9b59b6;
+            }
+            76% {
+                background-color: #16a085;
+            }
+            100% {
+                background-color: #2ecc71;
+            }
+        }
+        
+        @-moz-keyframes color {
+            0% {
+                background-color: #f1c40f;
+            }
+            32% {
+                background-color: #e74c3c;
+            }
+            55% {
+                background-color: #9b59b6;
+            }
+            76% {
+                background-color: #16a085;
+            }
+            100% {
+                background-color: #2ecc71;
+            }
+        }
+        
+        @keyframes color {
+            0% {
+                background-color: #f1c40f;
+            }
+            32% {
+                background-color: #e74c3c;
+            }
+            55% {
+                background-color: #9b59b6;
+            }
+            76% {
+                background-color: #16a085;
+            }
+            100% {
+                background-color: #2ecc71;
+            }
+        }
+        
+        h1 {
+            margin: 0;
+            text-transform: uppercase;
+            font-family: 'halvetica', sans-serif;
+            color: #ecf0f1;
+            font-size: 30pt;
+            text-align: center;
+            line-height: 250px;
+            letter-spacing: 0.2em
+        }
+        
+        p {
+            text-align: center;
+            color: #ecf0f1;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .box {
+            color: white;
+            border: 1px solid white;
+            margin-bottom: 20px;
+            padding: 30px;
+            border-radius: 8px;
+            height: 350px;
+        }
+        
+        table,
+        th,
+        td {
+            border: 0px solid white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>WebPack</h1>
+    <i><marquee scrollamount=10>Senang Sedih yang penting KUMPUL</marquee></i>
+
+    <center>
+        <font face=calibri size=5 color=orange>
+            <hr> Belajar Javascript
+            <hr>
+    </center>
+
+    <center>
+        <h1>Ngantuk Saat Ngoding? Sabaar</h1>
+    </center>
+    <table style="width:100%">
+        <tr>
+            <td style="width:50%">
+                <center>
+                    <div class="box">
+                        <h2><strong>Perkalian a dengan b:</strong></h2>
+                        <p>a = 5</p>
+                        <p>b = 5</p>
+                        <button id="btn-1" type="button" class="btn">Try it!</button>
+                        <div>Result = <strong><span id="multiplyA-B"></span></strong></div>
+                    </div>
+                </center>
+            </td>
+            <td style="width:50%">
+                <center>
+                    <div class="box">
+                        <h2><strong>Perkalian x ( x = 2 ) dengan y:</strong></h2>
+                        <p>y = 6</p>
+                        <br/><br/>
+                        <button id="btn-2" type="button" class="btn">Try it!</button>
+                        <div>Result = <strong><span id="multiplyX-Y"></span></strong></div>
+                    </div>
+                </center>
+            </td>
+        </tr>
+    </table>
+    <script src="./dist/bundle.js"></script>
+
+
+</body>
+
+</html>
